@@ -1,5 +1,7 @@
 name: github_actions
 
+
+# Trigger the workflow on push or pull request
 on:
   - push
   - pull_request
@@ -7,9 +9,11 @@ on:
 jobs:
   build:
 
+    # The type of machine to run the job on
     runs-on: ubuntu-latest
 
     strategy:
+      # Node versions list
       matrix:
         node-version: [14.x]
 
@@ -25,8 +29,8 @@ jobs:
         # The Node.js version to configure
         with:
           node-version: ${{ matrix.node-version }}
-      - name: npm install, build
-        # Install and build project
+      - name: npm install
+        # Install project
         run: |
           make install
         # Add environment variables
@@ -36,4 +40,3 @@ jobs:
         # Run Linter
         run: |
           make lint
-      
