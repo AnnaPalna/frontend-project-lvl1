@@ -3,26 +3,16 @@
 
 name: githab_actions
 
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+on: push
 
 jobs:
- build:
-    runs-on: ubuntu-latest
-
-    steps:
-      # Checks out a copy of your repository on the ubuntu-latest machine
-     - uses: actions/checkout@v2
-     - name: npm install
-       run: make install
-     - name: Run linter
-       run: make lint
-       env:
-        CI: true
-
+  # Set the job key. The key is displayed as the job name
+  # when a job name is not provided
+  super-lint:
+    # Name the Job
+    name: Lint code base
+    # Set the type of machine to run on
+    runs-on: make lint
        
        
      
