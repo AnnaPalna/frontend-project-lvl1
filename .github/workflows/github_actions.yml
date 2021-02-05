@@ -3,16 +3,23 @@
 
 name: githab_actions
 
-on: push
+on:
+  - push
+  - pull_request
 
 jobs:
-  # Set the job key. The key is displayed as the job name
-  # when a job name is not provided
-  super-lint:
-    # Name the Job
-    name: Lint code base
-    # Set the type of machine to run on
-    runs-on: make lint
-       
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - run: make install
+      - run: make lint
+        env:
+          CI: true
        
      
