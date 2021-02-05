@@ -16,10 +16,8 @@ jobs:
 
     steps:
       # Checks out a copy of your repository on the ubuntu-latest machine
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: run linter
-        run: make lint
-        
- 
+     - uses: actions/checkout@v2
+     - run: make install
+     - run: make lint
+       env:
+         CI: true
