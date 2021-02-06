@@ -1,25 +1,25 @@
-name: github_actions
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-# Run this workflow every time a new commit pushed to your repository
+name: githab_actions
+
 on:
   - push
   - pull_request
 
 jobs:
-  # Set the job key. The key is displayed as the job name
-  # when a job name is not provided
-  super-lint:
-    # Name the Job
-    name: Lint code base
-    # Set the type of machine to run on
+  build:
+
     runs-on: ubuntu-latest
-
     steps:
-      - name: clone my repo
-        uses: actions/checkout@v1      
-
-      - name: install dep-s
-        run: make install
-
-      - name: run linter
-        run: make lint
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - run: make install
+      - run: make lint
+        env:
+          CI: true
+       
+     
