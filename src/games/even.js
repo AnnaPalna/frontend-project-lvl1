@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 import readlineSync from 'readline-sync';
 import generator from '../generator.js';
 
@@ -35,4 +32,3 @@ console.log(`Congratulations, ${userName}!`);
 }
 
 export default getEven;
->>>>>>> 1e47e6c3bfda735cc3de0e0ccaaf37542a7d5766
