@@ -4,4 +4,4 @@
 
 [![github_actions](https://github.com/AnnaPalna/frontend-project-lvl1/workflows/github_actions/badge.svg)](https://github.com/AnnaPalna/frontend-project-lvl1/actions)
 
-https://asciinema.org/a/tcg2fTfMiiANUzYRI0SskYDqE
+<script id="asciicast-tcg2fTfMiiANUzYRI0SskYDqE" src="https://asciinema.org/a/tcg2fTfMiiANUzYRI0SskYDqE.js" async></script>
