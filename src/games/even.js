@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { generator } from '../generator.js';
+import generator from '../generator.js';
 
 const isEven = (number) => number % 2 === 0;
 
