@@ -9,7 +9,7 @@ const userName = readlineSync.question('May I have your name? ');
 console.log(`Hello, ${userName}`);
 console.log('Answer "yes" if the number is even, otherwise answer "no"');
 
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < 3; i += 1) {
     const num = generator(1, 100);
     console.log(`Question:${num}`);
     const answer = readlineSync.question('Your answer:');
