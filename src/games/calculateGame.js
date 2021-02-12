@@ -1,7 +1,14 @@
 import readlineSync from 'readline-sync';
-import { generator } from '../generator.js';
+import generator from '../generator.js';
 
 //реализация функции сложения, вычитания, умножения
+
+
+const calculateGame = () => { 
+console.log("Welcome to the Brain Games!");
+const userName = readlineSync.question('May I have your name? ');
+console.log(`Hello, ${userName}`);
+console.log('What is the result of the expression?');
 
 const makeOperation = (operator, x, y) => {
     switch (operator) {
@@ -16,11 +23,6 @@ const makeOperation = (operator, x, y) => {
     }
 }
 
-const calculateGame = () => { 
-console.log("Welcome to the Brain Games!");
-const userName = readlineSync.question('May I have your name? ');
-console.log(`Hello, ${userName}`);
-console.log('What is the result of the expression?');
 
 for (let i = 0; i < 3; i++) {
     const num1 = generator(1, 100);
@@ -32,7 +34,7 @@ for (let i = 0; i < 3; i++) {
     
     const rightAnswer = makeOperation(operator, num1, num2);
     
-    if (answer === rightAnswer) {
+    if (Number(answer) === rightAnswer) {
         console.log('Correct!');
     }
 
