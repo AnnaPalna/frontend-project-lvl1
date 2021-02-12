@@ -24,7 +24,7 @@ const makeOperation = (operator, x, y) => {
 }
 
 
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < 3; i += 1) {
     const num1 = generator(1, 100);
     const num2 = generator(1, 100);
     const operators = ['+', '-', '*'];
