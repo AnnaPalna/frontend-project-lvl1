@@ -46,4 +46,5 @@ console.log(`Congratulations, ${userName}!`);
 
 };
 
-export default calculateGame, makeOperation;
+export default calculateGame;
+export default makeOperation;
