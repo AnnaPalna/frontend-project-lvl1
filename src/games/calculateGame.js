@@ -47,4 +47,3 @@ console.log(`Congratulations, ${userName}!`);
 };
 
 export default calculateGame;
-export default makeOperation;
