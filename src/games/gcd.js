@@ -14,13 +14,13 @@ const brainGcd = () => {
     console.log(`Hello, ${userName}`);
     console.log('Find the greatest common divisor of given numbers.');
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 3; i += 1) {
         const num1 = generator(1, 100);
         const num2 = generator(1, 100);
         console.log(`Question:${num1}${num2}`);
         const answer = readlineSync.question('Your answer:');
 
-        const rightAnswer = findGCD(num1, num);
+        const rightAnswer = findGCD(num1, num2);
 
         if (answer === rightAnswer) {
             console.log('Correct!');
