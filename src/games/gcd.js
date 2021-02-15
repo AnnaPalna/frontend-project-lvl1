@@ -8,7 +8,7 @@ const findGCD = (a, b) => {
     return findGCD(b, a % b);
   };
 
-const gameGcd = () => { 
+const brainGcd = () => { 
     console.log("Welcome to the Brain Games!");
     const userName = readlineSync.question('May I have your name? ');
     console.log(`Hello, ${userName}`);
@@ -35,4 +35,4 @@ const gameGcd = () => {
     console.log(`Congratulations, ${userName}!`);
 }
 
-export default gameGcd;
+export default brainGcd;
