@@ -18,7 +18,7 @@ const brainGcd = () => {
     for (let i = 0; i < 3; i += 1) {
         const num1 = generator(1, 100);
         const num2 = generator(1, 100);
-        console.log(`Question:${num1} ${num2}`);
+        console.log(`Question: ${num1} ${num2}`);
         const answer = readlineSync.question('Your answer:');
 
         const rightAnswer = findGCD(num1, num2);
