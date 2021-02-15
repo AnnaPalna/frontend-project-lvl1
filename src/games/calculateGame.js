@@ -29,7 +29,7 @@ for (let i = 0; i < 3; i += 1) {
     const num2 = generator(1, 100);
     const operators = ['+', '-', '*'];
     const operator = operators[generator(0, operators.length - 1)];
-    console.log(`Question: ${num1}${operator}${num2}`);
+    console.log(`Question: ${num1} ${operator} ${num2}`);
     const answer = readlineSync.question('Your answer:');
     
     const rightAnswer = makeOperation(operator, num1, num2);
