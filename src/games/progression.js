@@ -34,8 +34,8 @@ const progression = () => {
      // const rightAnswer = progression[hiddenIndex];
      // progression[hiddenIndex] = '..';
       
-      console.log(`${question}`);
-      const answer = readlineSync.question('Ypur answer:');
+      console.log(`Question: ${question}`);
+      const answer = readlineSync.question('Your answer:');
 
         if (Number(answer) === rightAnswer) {
             console.log('Correct!');
