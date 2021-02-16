@@ -22,12 +22,12 @@ const progression = () => {
       const beginProg = generator(1, 10);
       const stepProg = generator(1, 10);
       const lenProg = 10;
-      const progression = makeProgression(beginProg, stepProg, lenProg);
+      const prog = makeProgression(beginProg, stepProg, lenProg);
       const hiddenIndex = generator(0, lenProg - 1);
-      const rightAnswer = progression[hiddenIndex];
-      progression[hiddenIndex] = '..';
+      const rightAnswer = prog[hiddenIndex];
+      prog[hiddenIndex] = '..';
 
-      const question = progression.join(' ');
+      const question = prog.join(' ');
      // console.log(`${question}`);
      // const answer = readlineSync.question('Your answer:');
 
