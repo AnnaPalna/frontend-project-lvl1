@@ -5,3 +5,7 @@
 [![githab_actions](https://github.com/AnnaPalna/frontend-project-lvl1/workflows/githab_actions/badge.svg)](https://github.com/AnnaPalna/frontend-project-lvl1/actions)
 
 <a href="https://asciinema.org/a/390849" target="_blank"><img src="https://asciinema.org/a/390849.svg" /></a>
+
+<a href="https://asciinema.org/a/391876" target="_blank"><img src="https://asciinema.org/a/391876.svg" /></a>
+
+
