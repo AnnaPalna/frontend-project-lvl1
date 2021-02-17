@@ -1,0 +1,19 @@
+name: github actions
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: clone my repo
+        uses: actions/checkout@v1      
+
+      - name: install dep-s
+        run: make install
+
+      - name: run linter
+        run: make lint
