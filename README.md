@@ -2,4 +2,4 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/cad09c13a6859aaa1724/maintainability)](https://codeclimate.com/github/AnnaPalna/frontend-project-lvl1/maintainability)
 
-![github actions](https://github.com/AnnaPalna/frontend-project-lvl1/workflows/github%20actions/badge.svg)
+[![githab_actions](https:/AnnaPalna/github.com//frontend-project-lvl1/workflows/githab_actions/badge.svg)](https://github.com/AnnaPalna/frontend-project-lvl1/actions)
