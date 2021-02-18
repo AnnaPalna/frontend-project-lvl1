@@ -10,7 +10,7 @@ const progression = () => {
   const makeProgression = (begin, step, length) => {
     const arr = [];
 
-    for (let i = 0; i < 10; i += 1) {
+    for (let i = 0; i < length; i += 1) {
       arr.push(begin + i * step);
     }
     return arr;
