@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import generator from '../generator.js';
 
-const brainGcd = () => { 
+const brainGcd = () => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}`);
@@ -12,25 +12,23 @@ const brainGcd = () => {
       return a;
     }
     return findGCD(b, a % b);
-    };
-    for (let i = 0; i < 3; i += 1) {
-      const num1 = generator(1, 100);
-      const num2 = generator(1, 100);
-      console.log(`Question: ${num1} ${num2}`);
-      const answer = readlineSync.question('Your answer:');
+  };
+  for (let i = 0; i < 3; i += 1) {
+    const num1 = generator(1, 100);
+    const num2 = generator(1, 100);
+    console.log(`Question: ${num1} ${num2}`);
+    const answer = readlineSync.question('Your answer:');
 
-      const rightAnswer = findGCD(num1, num2);
+    const rightAnswer = findGCD(num1, num2);
 
-        if (Number(answer) === rightAnswer) {
-          console.log('Correct!');
-        }
-
-        else {
-          console.log(`${answer} is a wrong answer ;(. Correct answer was ${rightAnswer}.Let's try again, ${userName}!`);
-          return;
-        }
+    if (Number(answer) === rightAnswer) {
+      console.log('Correct!');
+    } else {
+      console.log(`${answer} is a wrong answer ;(. Correct answer was ${rightAnswer}.Let's try again, ${userName}!`);
+      return;
     }
-    console.log(`Congratulations, ${userName}!`);
-}
+  }
+  console.log(`Congratulations, ${userName}!`);
+}ж
 
 export default brainGcd;
