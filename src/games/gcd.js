@@ -29,6 +29,6 @@ const brainGcd = () => {
     }
   }
   console.log(`Congratulations, ${userName}!`);
-}ж
+};
 
 export default brainGcd;
