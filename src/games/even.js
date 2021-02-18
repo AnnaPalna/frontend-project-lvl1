@@ -3,7 +3,7 @@ import generator from '../generator.js';
 
 const isEven = (number) => number % 2 === 0;
 
-const getEven = () => { 
+const getEven = () => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}`);
@@ -19,15 +19,13 @@ const getEven = () => {
 
     if (resultAnswer === rightAnswer) {
       console.log('Correct!');
-    }
-
-    else {
+    } else {
       console.log(`Let's try again, ${userName}!`);
       return;
     }
-}
+  }
 
   console.log(`Congratulations, ${userName}!`);
-}
+};
 
 export default getEven;
